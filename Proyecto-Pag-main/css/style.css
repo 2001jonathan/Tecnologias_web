@@ -1,0 +1,263 @@
+/* Reset some basic elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding-top: 50px;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header .logo img {
+    max-width: 50px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 1.8em;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 0 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f4f4f4;
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    margin-top: 70px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #d0bfbf;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+
+article {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+article h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+article p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+article ul {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+article ul li {
+    list-style: disc;
+    margin-bottom: 10px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+}
+
+form {
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: #555;
+}
+
+/* Specific styles for different pages */
+body.index main {
+    background: url('../img/background.jpg') no-repeat center center/cover;
+    padding: 40px;
+    color: #fff;
+    text-align: center;
+}
+
+body.index h2, body.index p {
+    color: #fff;
+}
+
+body.index article {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    box-shadow: none;
+}
+
+body.contact main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body.contact section {
+    width: 80%;
+    max-width: 600px;
+}
+
+body.contact h2, body.contact p {
+    text-align: center;
+}
+
+body.contact form {
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Navbar */
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    /* Main content */
+    main {
+        padding: 10px;
+    }
+
+    /* Footer */
+    footer {
+        padding: 5px 0;
+    }
+}
+
+/* CSS adicional para estilizar los beneficios */
+.benefit {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.benefit-image {
+    flex: 0 0 auto; /* Establece el ancho fijo */
+    margin-right: 20px; /* Espacio entre la imagen y la información */
+}
+
+.benefit-image img {
+    width: 200px;
+    height: auto;
+}
+
+.benefit-info {
+    flex-grow: 1; /* Hace que la información ocupe todo el espacio disponible */
+}
+
+.benefit-info h3 {
+    margin-top: 0;
+    color: azure;
+}
+
+.benefit-info p {
+    color: #666;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
